@@ -1,0 +1,5 @@
+# PDF-Encryption-
+使用PyPDF2实现PDF的加密
+重要语句解释
+getPage(pageNumber)：会得到pdf文件中对应的pageNumber页数的页面对象，返回值为PageObject实例。在得到PageObject实例之后就可以将其加添、插入等操作。
+encrypt(user_pwd, owner_pwd=None, use_128bit=True)：将pdf进行加密，其中官方说userpwd是允许用户使用一些限制的权限打开pdf文件，也就是使用该密码的话可能会有一些限制，但是我并没有在文档中找到设置权限的内容。而ownerpwd则是允许用户无限制的使用。第三个参数是是否使用128位加密。
